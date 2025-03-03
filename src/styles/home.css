@@ -1,0 +1,180 @@
+
+.obj_fit {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bg-black {
+    background-color: #000;
+}
+.section_title {
+    font-size: 32px;
+    color: #fff;
+    font-weight: 500;
+
+}
+
+.theme_btn {
+    display: inline-block;
+    padding: 12px 28px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+    background-color: var(--theme-color); /* Updated theme color */
+    border: 2px solid transparent;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  
+  /* Hover effect */
+  .theme_btn:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Click (active) effect */
+  .theme_btn:active {
+    transform: scale(0.98);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+    
+
+
+
+/* Full-screen background */
+.banner-section {
+    background-color: #000; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 622px;
+    position: relative;
+    text-align: center;
+}
+
+/* Large outlined text */
+.banner-text {
+    font-size: 220px;
+    font-weight: 500;
+    text-transform: uppercase;
+    fill: #0d0c0c;
+    /* -webkit-text-stroke: 1px rgba(255, 255, 255, 0.2); */
+    stroke-width: 1px; 
+
+}
+
+
+  
+/* Gradient Fill */
+.gradient-fill {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Show gradient on hover */
+.banner-section:hover .gradient-fill {
+    opacity: 1;
+}
+
+.announcing {
+    z-index: 10;
+    z-index: 1;
+    margin-top: -90px;
+
+}
+.learn_more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+.learn_more a {
+    font-size: 20px;
+}
+.learn_more a:hover {
+  color: var(--theme-color) !important;
+}
+.announcing h2 {
+    color: #fff;
+}
+
+
+/* blogs */
+
+.blogs-container {
+    background-color: #000;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .blogs-heading {
+    margin-bottom: 50px;
+    text-align: left;
+    color: #fff;
+    
+  }
+  
+  .blogs-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .blog-card {
+    background: #111;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 15px;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .blog-card:hover  .blog-image {
+    transform: scale(1.01);
+
+}
+  
+  .blog-image {
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: .3s;
+    overflow: hidden;
+}
+  
+  .blog-date {
+    position: absolute;
+    top: 17px;
+    right: 16px;
+    background: #f8f9fa;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  .blog-title {
+    font-size: 18px;
+    margin-top: 20px;
+    text-align: left;
+    color: #fff;
+
+  }
+  
+  .blog-description {
+    font-size: 14px;
+    color: #ccc;
+    margin-top: 10px;
+    text-align: left;
+    min-height: 80px;
+  }
+  .card_link {
+    text-decoration: none;
+  }
+ 
