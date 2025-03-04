@@ -77,15 +77,22 @@
         padding: 10px 14px;
         margin-left: 10px;
     }
-    .section_title {
-        font-size: 22px;
-    }
+
     .banner-text {
-        font-size: 220px;
+        font-size: 120px;
         stroke-width: 4px;
     }
+   
+}
+
+@media only screen and (max-width: 425px) {
+    .card_img {
+        height: 300px;
+    }
+  
 
 }
+
 
 
 

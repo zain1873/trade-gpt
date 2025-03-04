@@ -56,35 +56,28 @@
     text-align: center;
 }
 
-/* Large outlined text */
 .banner-text {
-    font-size: 220px;
+    /* font-size: 220px; */
+    font-size: 136px;
     font-weight: 500;
     text-transform: uppercase;
     fill: #0d0c0c;
-    /* -webkit-text-stroke: 1px rgba(255, 255, 255, 0.2); */
     stroke-width: 1px; 
-
 }
-
-
   
 /* Gradient Fill */
 .gradient-fill {
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
 }
-
 /* Show gradient on hover */
 .banner-section:hover .gradient-fill {
     opacity: 1;
 }
-
 .announcing {
     z-index: 10;
     z-index: 1;
     margin-top: -90px;
-
 }
 .learn_more {
     display: flex;
@@ -94,6 +87,7 @@
 }
 .learn_more a {
     font-size: 20px;
+    
 }
 .learn_more a:hover {
   color: var(--theme-color) !important;

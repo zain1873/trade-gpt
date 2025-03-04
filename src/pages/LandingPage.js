@@ -6,7 +6,7 @@ import Blogs from "../components/Blogs";
 import Careers from "../components/Careers";
 import Developers from "../components/Developers";
 
-const text = "TRADE".split("");
+const text = "TRADEGPT".split("");
 
 const LandingPage = () => {
   const [cursor, setCursor] = useState({ x: 0, y: 0 });

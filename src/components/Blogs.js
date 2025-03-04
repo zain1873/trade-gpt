@@ -29,7 +29,7 @@ const blogsData = [
 
 function Blogs() {
     return (
-      <div className="container-fluid bg-black p-lg-5 p-0"> 
+      <div className="container-fluid bg-black p-lg-5 p-md-4"> 
         <div className="container pt-5">
           <h2 className="blogs-heading text-start section_title">
             Read about our latest announcements
