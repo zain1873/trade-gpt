@@ -1,6 +1,6 @@
 import React from "react";
-import grokImg from "../assets/img/grok_img.jpg";
-import { section } from "framer-motion/client";
+import grokImg from "../assets/img/trade_gpt_img.jpg";
+// import { section } from "framer-motion/client";
 
 
 const blogsData = [

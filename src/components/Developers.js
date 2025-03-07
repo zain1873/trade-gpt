@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/developers.css";
-import card1 from "../assets/img/grok_img.jpg";
-import card2 from "../assets/img/grok_img.jpg";
+import card1 from "../assets/img/trade_gpt_img.jpg";
+import card2 from "../assets/img/trade_gpt_img.jpg";
 
 const Developers = () => {
   return (
