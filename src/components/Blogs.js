@@ -32,7 +32,7 @@ function Blogs() {
       <div className="container-fluid bg-black p-lg-5 p-md-4"> 
         <div className="container pt-5">
           <h2 className="blogs-heading text-start section_title">
-            Read about our latest announcements
+            Read about our latest announcement.
           </h2>
   
           <div className="row"> 

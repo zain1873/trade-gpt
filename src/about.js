@@ -7,7 +7,6 @@ function about() {
         <Layout>
             
         </Layout>
-      
     </div>
   )
 }
