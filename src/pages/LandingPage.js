@@ -25,7 +25,7 @@ const LandingPage = () => {
                 </div>
                 <div className="learn_more">
                   <a className="text-white" href="#">Learn More</a>
-                  <a className="text-white" href="#">Try Now</a>
+                  <a className="text-white" href="https://tradegpt-chat.vercel.app/" target="blank">Try Now</a>
                 </div>
               </div>
             </div>
