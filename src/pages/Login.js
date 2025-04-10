@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/login.css";
-import grokIMg from "../assets/img/image.png"; // Grok logo image
+import grokIMg from "../assets/img/image.png"; // TradeGptlogo image
 
 const LoginComponent = () => {
   return (
@@ -8,7 +8,7 @@ const LoginComponent = () => {
       <div className="login-card">
         {/* Logo */}
         <div className="text-center logo mb-4">
-          <img src={grokIMg} alt="Grok Logo" className="grok-logo obj_fit" />
+          <img src={grokIMg} alt="TradeGptLogo" className="grok-logo obj_fit" />
         </div>
 
         {/* Social Login Buttons */}

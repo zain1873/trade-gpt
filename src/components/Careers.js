@@ -5,15 +5,15 @@ import "../styles/careers.css";
 const careersData = [
   {
     title: "AI Engineer & Researcher - Data",
-    location: "San Francisco & Palo Alto, CA",
+    location: "London",
   },
   {
     title: "AI Engineer & Researcher - GPU Kernel",
-    location: "San Francisco & Palo Alto, CA",
+    location: "London",
   },
   {
     title: "AI Engineer & Researcher - Human Data",
-    location: "San Francisco & Palo Alto, CA",
+    location: "London",
   },
 ];
 

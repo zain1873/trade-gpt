@@ -19,7 +19,7 @@ const Developers = () => {
               <div className="developers_body">
                 <h5 className="card-title">Cloud Console</h5>
                 <p className="card-text">
-                  Prepare to integrate Grok by setting up our API.
+                  Prepare to integrate TradeGpt by setting up our API.
                 </p>
                 <a target="_blank" href="#" className="theme_btn">
                   Learn More →
@@ -37,7 +37,7 @@ const Developers = () => {
               <div className="developers_body">
                 <h5 className="card-title">Developer Docs</h5>
                 <p className="card-text">
-                  Learn more about Grok and its capabilities.
+                  Learn more about TradeGpt and its capabilities.
                 </p>
                 <a target="_blank"  href="https://docs.x.ai/docs/overview#featured-models" className="theme_btn">
                   View Docs →

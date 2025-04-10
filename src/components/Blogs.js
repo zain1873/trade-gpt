@@ -6,9 +6,9 @@ import grokImg from "../assets/img/trade_gpt_img.jpg";
 const blogsData = [
   {
     date: "February 19, 2025",
-    title: "Grok 3 Beta — The Age of Reasoning Agents",
+    title: "TradeGpt Beta — The Age of Reasoning Agents",
     description:
-      "We are thrilled to unveil an early preview of Grok 3, our most advanced model yet, blending superior reasoning with extensive pretraining knowledge.",
+      "We are thrilled to unveil an early preview of TradeGpt3, our most advanced model yet, blending superior reasoning with extensive pretraining knowledge.",
     image: grokImg ,
   },
   {

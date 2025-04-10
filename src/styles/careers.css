@@ -9,6 +9,9 @@
     font-weight: 500;
     color: #d1d1d1;
   }
+  .card_blogs_desc {
+    min-height: 150px;
+  }
   
   .career-item {
     padding: 18px 20px;
@@ -24,6 +27,7 @@
     font-size: 18px;
     font-weight: 600;
     margin: 0;
+    min-width: 340px;
   }
   
   .job-location {
