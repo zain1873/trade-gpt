@@ -181,9 +181,7 @@
   }
    
  */
-
-
- /* ========== GLOBAL ========== */
+/* ========== GLOBAL ========== */
 .obj_fit {
   width: 100%;
   height: 100%;
@@ -194,7 +192,13 @@
   background-color: #000;
 }
 
-/* ========== BUTTON ========== */
+.section_title {
+  font-size: 32px;
+  color: #fff;
+  font-weight: 500;
+}
+
+/* ========== BUTTONS ========== */
 .theme_btn {
   display: inline-block;
   padding: 12px 28px;
@@ -220,32 +224,38 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* ========== STATIC BANNER TEXT ========== */
+/* ========== BANNER SECTION ========== */
+.banner-section {
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1rem;
+  min-height: 100vh;
+  overflow: hidden;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* ✅ FIXED: STATIC BANNER TEXT */
 .static-banner-text {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  min-height: 100vh;
-  background-color: #000;
-  padding: 3rem 1rem;
-  gap: 2rem; /* ✅ Space between TRADE and GPT */
-  text-align: center;
+  gap: 2rem; /* ✅ Spacing between TRADE and GPT */
 }
 
-/* Shared style for TRADE and GPT */
+/* ✅ FIXED: OUTLINE TEXT */
 .banner-text {
-  font-family: 'Arial Black', sans-serif;
-  font-weight: 900;
+  font-family: 'Poppins', sans-serif; /* Clean modern font */
+  font-weight: 800;
   font-size: clamp(3rem, 13vw, 9rem);
   text-transform: uppercase;
-
   color: transparent;
-  -webkit-text-stroke: 1.5px #62a6d1;
+  -webkit-text-stroke: 1px #375867;
   -webkit-text-fill-color: transparent;
-
   line-height: 1.3;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.15em; /* ✅ Fix merged letters */
   text-shadow: none;
 
   -webkit-font-smoothing: antialiased;
@@ -255,10 +265,20 @@
   overflow-wrap: break-word;
 }
 
-/* Optional: separate targeting if needed */
+/* OPTIONAL: Specific targeting (not strictly required) */
 .word-top,
 .word-bottom {
   display: block;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 768px) {
+  .banner-section {
+    min-height: 500px;
+  }
+  .job-title {
+    min-width: 0 !important;
+  }
 }
 
 /* ========== ANNOUNCING SECTION ========== */
