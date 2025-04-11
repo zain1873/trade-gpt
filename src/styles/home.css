@@ -287,6 +287,7 @@
   .banner-text {
     font-weight: 700;
     text-transform: uppercase;
+    letter-spacing: 10px;
     color: transparent;
     -webkit-text-stroke: 1.5px #375867;
     -webkit-text-fill-color: transparent;
