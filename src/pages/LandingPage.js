@@ -10,11 +10,13 @@ const LandingPage = () => {
     <Layout>
       <div className="banner-section">
         <div className="static-banner-text">
-          {/* <h1 className="banner-text">TRADEGPT</h1> */}
-          <span class="word-top banner-text">TRADE</span>
-          <span class="word-bottom banner-text">GPT</span>
+            {/* <h1 className="banner-text">TRADEGPT</h1> */}
+           <span class="word-top banner-text">TRADE</span>
+          <span class="word-bottom banner-text">GPT</span> 
+          
         </div>
       </div>
+    
 
       {/* announcing */}
       <div className="announcing">

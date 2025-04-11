@@ -182,178 +182,197 @@
    */
 
 
-   .obj_fit {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  /* ========== GLOBAL UTILITY ========== */
+.obj_fit {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bg-black {
+  background-color: #000;
+}
+
+/* ========== SECTION TITLES ========== */
+.section_title {
+  font-size: 32px;
+  color: #fff;
+  font-weight: 500;
+}
+
+/* ========== BUTTONS ========== */
+.theme_btn {
+  display: inline-block;
+  padding: 12px 28px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+  background-color: var(--theme-color);
+  border: 2px solid transparent;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.theme_btn:hover {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.theme_btn:active {
+  transform: scale(0.98);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ========== BANNER SECTION ========== */
+.banner-section {
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1rem;
+  min-height: 100vh;
+  overflow: hidden;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* ✅ Final outline text style (consistent everywhere) */
+.banner-text {
+  font-family: 'Arial Black', sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: clamp(3rem, 13vw, 9rem);
+  line-height: 1.4;
+  letter-spacing: 0.05em;
+
+  color: transparent;
+  -webkit-text-stroke: 1px #62a6d1;
+  -webkit-text-fill-color: transparent;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-shadow: none;
+
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+/* ========== ANNOUNCING SECTION ========== */
+.announcing {
+  z-index: 1;
+  background-color: #000;
+}
+
+.learn_more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.learn_more a {
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.learn_more a:hover {
+  color: var(--theme-color) !important;
+}
+
+.announcing h2 {
+  text-align: center;
+  color: #fff;
+}
+
+/* ========== BLOGS ========== */
+.blogs-container {
+  background-color: #000;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.blogs-heading {
+  margin-bottom: 50px;
+  text-align: left;
+  color: #fff;
+}
+
+.blogs-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.blog-card {
+  background: #111;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 15px;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+}
+
+.blog-card:hover .blog-image img {
+  transform: scale(1.06);
+}
+
+.blog-image img {
+  transition: 0.3s;
+}
+
+.blog-image {
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: 0.3s;
+  overflow: hidden;
+}
+
+.blog-date {
+  position: absolute;
+  top: 17px;
+  right: 16px;
+  background: #f8f9fa;
+  padding: 5px 10px;
+  font-size: 12px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #000;
+}
+
+.blog-title {
+  font-size: 18px;
+  margin-top: 20px;
+  text-align: left;
+  color: #fff;
+}
+
+.blog-description {
+  font-size: 14px;
+  color: #ccc;
+  margin-top: 10px;
+  text-align: left;
+  min-height: 80px;
+}
+
+.card_link {
+  text-decoration: none;
+}
+
+
+
+  
+ 
+  
+@media (max-width: 768px) {
+  .job-title {
+    min-width: 0 !important;
   }
-  
-  .bg-black {
-    background-color: #000;
-  }
-  
-  .section_title {
-    font-size: 32px;
-    color: #fff;
-    font-weight: 500;
-  }
-  
-  .theme_btn {
-    display: inline-block;
-    padding: 12px 28px;
-    font-size: 16px;
-    font-weight: 600;
-    color: #000;
-    background-color: var(--theme-color);
-    border: 2px solid transparent;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    text-transform: uppercase;
-    text-decoration: none;
-  }
-  
-  .theme_btn:hover {
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
-  }
-  
-  .theme_btn:active {
-    transform: scale(0.98);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* ✅ Banner Section */
-  .banner-section {
-    background-color: #000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem 1rem;
-    min-height: 100vh;
-    overflow: hidden;
-    text-align: center;
-    box-sizing: border-box;
-  }
-  
-  /* ✅ Consistent outline text across all screens */
-  .banner-text {
-    font-weight: 800;
-    text-transform: uppercase;
-    text-align: center;
-    font-size: clamp(2.5rem, 12vw, 8rem);
-    line-height: 1.3;
-    letter-spacing: 2px;
-  
-    color: transparent;
-    -webkit-text-stroke: 1px #62a6d1;
-    -webkit-text-fill-color: transparent;
-    text-shadow: none;
-  
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    word-break: break-word;
-    overflow-wrap: break-word;
-  }
-  
-  .announcing {
-    z-index: 1;
-    background-color: #000;
-  }
-  
-  .learn_more {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 12px;
-  }
-  
-  .learn_more a {
-    font-size: 20px;
-  }
-  
-  .learn_more a:hover {
-    color: var(--theme-color) !important;
-  }
-  
-  .announcing h2 {
-    text-align: center;
-    color: #fff;
-  }
-  
-  /* Blogs */
-  .blogs-container {
-    background-color: #000;
-    color: #fff;
-    padding: 40px 20px;
-    text-align: center;
-  }
-  
-  .blogs-heading {
-    margin-bottom: 50px;
-    text-align: left;
-    color: #fff;
-  }
-  
-  .blogs-grid {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-  }
-  
-  .blog-card {
-    background: #111;
-    border-radius: 10px;
-    overflow: hidden;
-    padding: 15px;
-    position: relative;
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .blog-card:hover .blog-image img {
-    transform: scale(1.06);
-  }
-  
-  .blog-image img {
-    transition: 0.3s;
-  }
-  
-  .blog-image {
-    height: auto;
-    object-fit: cover;
-    border-radius: 8px;
-    transition: 0.3s;
-    overflow: hidden;
-  }
-  
-  .blog-date {
-    position: absolute;
-    top: 17px;
-    right: 16px;
-    background: #f8f9fa;
-    padding: 5px 10px;
-    font-size: 12px;
-    border-radius: 5px;
-    text-decoration: none;
-  }
-  
-  .blog-title {
-    font-size: 18px;
-    margin-top: 20px;
-    text-align: left;
-    color: #fff;
-  }
-  
-  .blog-description {
-    font-size: 14px;
-    color: #ccc;
-    margin-top: 10px;
-    text-align: left;
-    min-height: 80px;
-  }
-  
-  .card_link {
-    text-decoration: none;
-  }
-  
+}
