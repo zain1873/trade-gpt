@@ -227,8 +227,6 @@
   } */
 
 
-
-
   .obj_fit {
     width: 100%;
     height: 100%;
@@ -285,34 +283,43 @@
   
   /* ✅ Fixed responsive banner text */
   .banner-text {
-    font-weight: 700;
+    font-weight: 800;
     text-transform: uppercase;
-    color: transparent;
-    -webkit-text-stroke: 1.5px #375867;
-    -webkit-text-fill-color: transparent;
-    line-height: 1.4;
     text-align: center;
+    font-size: clamp(2.5rem, 12vw, 8rem); /* Reduced from 26vw */
+    line-height: 1.3; /* Fix overlapping */
+    letter-spacing: 2px;
+  
+    color: transparent;
+    -webkit-text-stroke: 1px #62a6d1;
+    -webkit-text-fill-color: transparent;
+    text-shadow: none;
+  
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     word-break: break-word;
     overflow-wrap: break-word;
-    font-size: clamp(2.5rem, 26vw, 13rem);
   }
-
   
- 
-  
-  /* ✅ On screens below 768px, fill text instead of outline */
-  @media (max-width: 768px) {
+  /* ✅ On screens below 768px or retina, fill text instead of outline */
+  @media (max-width: 768px),
+         (-webkit-min-device-pixel-ratio: 2),
+         (min-resolution: 192dpi) {
     .banner-text {
-      color: #000;
+      color: #62a6d1 !important;
+      -webkit-text-stroke: 0 !important;
+      -webkit-text-fill-color: #62a6d1 !important;
+      text-shadow: none !important;
     }
+  
     .banner-section {
       min-height: 500px;
     }
+  
     .job-title {
       min-width: 0 !important;
     }
   }
-  
   
   .announcing {
     z-index: 1;
