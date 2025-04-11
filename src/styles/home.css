@@ -284,7 +284,7 @@
   }
   
   /* ✅ Fixed responsive banner text */
-  .banner-text {
+  /* .banner-text {
     font-weight: 700;
     text-transform: uppercase;
     color: transparent;
@@ -295,7 +295,33 @@
     word-break: break-word;
     overflow-wrap: break-word;
     font-size: clamp(2.5rem, 26vw, 13rem);
+  } */
+
+  .banner-text {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 2px #375867;
+    -webkit-text-fill-color: transparent;
+    line-height: 1;
+    text-align: center;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    font-size: clamp(2.5rem, 26vw, 13rem);
   }
+  
+  /* ✅ On screens below 768px, fill text instead of outline */
+  @media (max-width: 768px) {
+    .banner-text {
+      color: #375867;
+      -webkit-text-fill-color: #375867;
+      -webkit-text-stroke: 0px;
+    }
+    .job-title {
+      min-width: 0 !important;
+    }
+  }
+  
   
   .announcing {
     z-index: 1;
