@@ -204,29 +204,21 @@
   }
 
 
-  
-  @media (max-width: 972px) {
-    .banner-text {
-      height: 190px;
-     }
 
-  }
-
-  @media (max-width: 664px) {
+  @media (max-width: 768px) {
     .banner-text {
       font-size: 150px;
-      height: 150px;
      }
      .banner-section {
       min-height: 470px;
      }
+     
   }
 
   @media (max-width: 530px) {
     
   .banner-text {
     font-size: 120px;
-    height: 120px;
 }
     .job-title {
       min-width: 0 !important;
@@ -241,7 +233,14 @@
       min-height: 362px;
   }
   .banner-text {
-    font-size: 86px;
-    height: 86px;
+    font-size: 110px;
+}
+  }
+
+
+  
+  @media (max-width: 375px) {
+  .banner-text {
+    font-size: 90px;
 }
   }
