@@ -52,16 +52,16 @@
   }
   
   .banner-text {
-    font-weight: 700;
-    text-transform: uppercase;
-    color: transparent;
+    font-family: 'Montserrat', sans-serif;
     -webkit-text-stroke: 1.5px #375867;
     -webkit-text-fill-color: transparent;
+    color: transparent;
+    font-size: clamp(2.5rem, 14vw, 13rem);
+    font-weight: 700;
     line-height: 1.1;
+    letter-spacing: 8px;
     text-align: center;
-    word-break: break-word;
-    overflow-wrap: break-word;
-    font-size: clamp(2.5rem, 26vw, 13rem);
+    text-transform: uppercase;
   }
 
   
